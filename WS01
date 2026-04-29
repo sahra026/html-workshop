@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First HTML Page</title>
+</head>
+<body>
+
+    <h1> Sahra Awed </h1>
+      
+    <p>I am a student learning web development. I enjoy creating websites and learning new technologies.</p>
+    <img src="https://ekomatkaajat.fi/wp-content/uploads/2022/05/merikilpikonnan_suojelu_kreikka.jpg" 
+alt="Sea turtle" width="300"> 
+
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Gaming</li>
+        <li>Sports</li>
+        <li>Music</li>
+    </ul>
+
+    <h2>My Favorite Website</h2>
+    <a href="https://www.laurea.fi">Visit Laurea</a>
+
+
+    <h2>My Courses</h2>
+    <table border="1">
+        <tr>
+            <th>Course</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Web Development</td>
+            <td>Ongoing</td>
+        </tr>
+        <tr>
+            <td>Programming</td>
+            <td>Completed</td>
+        </tr>
+    </table>
+
+    <h2>Contact Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
