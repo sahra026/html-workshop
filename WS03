@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Tasks</title>
+  <style>
+    
+    .transition-button {
+      background-color: lightblue;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .transition-button:hover {
+      background-color: rgb(210, 52, 52);
+    }
+
+   
+    .animation-box {
+      width: 50px;
+      height: 50px;
+      background-color: lightgreen;
+      position: relative;
+      animation: move 2s infinite alternate;
+    }
+    @keyframes move {
+      from { left: 0; }
+      to { left: 100px; }
+    }
+
+   
+    .pseudo-list li:nth-child(odd) {
+      background-color: lightgray;
+    }
+    .pseudo-list li:nth-child(even) {
+      background-color: white;
+    }
+
+    
+    .filter-image {
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+    .filter-image:hover {
+      filter: grayscale(0%);
+    }
+
+    /* Task 5 */
+    .quote {
+      position: relative;
+      padding-left: 20px;
+      font-style: italic;
+    }
+    .quote::before {
+      content: '"';
+      font-size: 40px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: lightgray;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 1 -->
+  <button class="transition-button">Hover me</button>
+
+  <!-- Task 2 -->
+  <div class="animation-box"></div>
+
+  <!-- Task 3 -->
+  <ul class="pseudo-list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+
+<img src="https://ekomatkaajat.fi/wp-content/uploads/2022/05/merikilpikonnan_suojelu_kreikka.jpg" 
+alt="Sea turtle" width="300" class="filter-image">
+  <!-- Task 5 -->
+  <blockquote class="quote">
+    This is a sample quote.
+  </blockquote>
+
+</body>
+</html>

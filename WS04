@@ -1,0 +1,96 @@
+!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Workshop 4</title>
+  <style>
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+    .grid-item {
+      background-color: lightgreen;
+      padding: 20px;
+      text-align: center;
+    }
+
+    
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .box {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+    }
+
+    
+    .responsive-box {
+      padding: 20px;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .responsive-box {
+        background-color: lightcoral;
+      }
+    }
+    @media (min-width: 601px) {
+      .responsive-box {
+        background-color: lightseagreen;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>This is a paragraph about me.</p>
+    </section>
+
+    
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+
+   
+    <div class="flex-container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+
+   
+    <div class="responsive-box">Resize the window to see the effect</div>
+
+  </main>
+
+  <footer>
+    <p>Copyright 2026</p>
+  </footer>
+
+</body>
+</html>
+
