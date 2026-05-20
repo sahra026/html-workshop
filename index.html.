@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sahran Kahvila – kotoisaa kahvilakulttuuria .">
+  <title>Etusivu – Sahran Kahvila</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Siirry pääsisältöön</a>
+
+  <!-- HEADER & NAV -->
+  <header class="site-header" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Sahran Kahvila – etusivu">
+        ☕ <span>Sahran Kahvila</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Avaa valikko">
+        ☰
+      </button>
+
+      <nav id="main-nav" aria-label="Päänavigaatio">
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" class="active" aria-current="page">Etusivu</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="tietoja.html">Tietoja</a></li>
+          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+          <li><a href="results.html">Results</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HIGHLIGHT-PALKKI -->
+  <div class="highlight-bar" role="complementary" aria-label="Tarjous">
+    ✨ Lounas ma–pe klo 11–14 – katso <a href="menu.html">menu</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-inner">
+      <div class="hero-badge">Helsinki</div>
+      <h1 id="hero-heading">Tervetuloa<br><em>Kultapapuseen</em></h1>
+      <p>Paras kahvisi alkaa tästä. Tuoreet leivonnaiset, sydämellinen palvelu ja tunnelmallinen sisustus odottavat sinua.</p>
+      <div class="hero-cta">
+        <a href="menu.html" class="btn btn-primary">Tutustu menuun</a>
+        <a href="yhteystiedot.html" class="btn btn-outline">Aukioloajat</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PÄÄSISÄLTÖ -->
+  <main id="main-content" class="main">
+
+    <!-- Herokuva -->
+    <section class="section" aria-labelledby="herokuva-otsikko">
+      <h2 id="herokuva-otsikko" class="sr-only">Kahvilan tunnelma</h2>
+      <div class="hero-image-wrap">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop" alt="Viihtyisä kahvila sisältä – kahvilan tunnelmallinen juomatarjoilu" style="width:100%; height:420px; object-fit:cover; border-radius:14px; box-shadow:0 12px 40px rgba(59,31,10,0.2); display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="img-placeholder hero-img" style="height:420px; display:none;" role="img" aria-label="Kahvilan tunnelmakuva">Kuva ei latautunut</div>
+      </div>
+    </section>
+
+    <!-- Nostot -->
+    <section class="section" aria-labelledby="nostot-otsikko">
+      <div class="section-header">
+        <span class="eyebrow">Miksi meille?</span>
+        <h2 id="nostot-otsikko">Kolme syytä rakastua</h2>
+        <p>Kaikki mitä tarvitset täydelliseen kahvihetkeen – löydät meiltä.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=800&auto=format&fit=crop" alt="Blueberry matcha latte – värikäs erikoiskahvijuoma" style="width:100%; height:180px; object-fit:cover; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder cafe" style="height:180px; display:none;" role="img" aria-label="Kahvikuppi">Kuva ei latautunut</div>
+          <div class="card-body">
+            <h3>Erikoiskahvit</h3>
+            <p>Huolella valittuja single origin -papuja ja taidokkaasti valmistettuja juomia, joista löydät suosikkisi.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&auto=format&fit=crop" alt="Voinen croissant – tuoreena paistettu aamulla" style="width:100%; height:180px; object-fit:cover; display:block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder food" style="height:180px; display:none;" role="img" aria-label="Leivonnaiset">Kuva ei latautunut</div>
+          <div class="card-body">
+            <h3>Tuoreet leivonnaiset</h3>
+            <p>Aamulla paistetut croissantit, korvapuustit ja kakkupalat odottavat päivittäin klo 8 alkaen.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <!-- Lisää kuva: <img src="kuvat/interiori.jpg" alt="Viihtyisä kahvilasali"> -->
+          <div class="img-placeholder interior" style="height:180px;" role="img" aria-label="Kuvan paikka: kahvilan sisätila">Kuva tulossa – sisätila</div>
+          <div class="card-body">
+            <h3>Kodikas tunnelma</h3>
+            <p>Pehmeät nojatuolit, kirjahylly ja sopivasti hiljainen musiikki. Täydellinen paikka töille tai rentoutumiselle.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Promo-banneri -->
+    <section class="section" aria-labelledby="promo-otsikko">
+      <div class="promo-banner">
+        <h2 id="promo-otsikko">Aamupala-tarjous 🌅</h2>
+        <p>Kahvi + croissant vain <strong>6,50 €</strong> arkiaamuisin klo 8–10. Aloita päiväsi makeasti!</p>
+        <a href="menu.html" class="btn btn-primary">Katso koko menu</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-brand-name">☕ <span>Sahran Kahvila</span></p>
+        <p>Kotoisaa kahvilakulttuuria  .</p>
+      </div>
+      <div class="footer-col">
+        <h3>Sivut</h3>
+        <ul>
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="tietoja.html">Tietoja meistä</a></li>
+          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+          <li><a href="results.html">Results</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Aukioloajat</h3>
+        <ul>
+          <li>Ma–Pe: 8:00–18:00</li>
+          <li>La: 9:00–17:00</li>
+          <li>Su: 10:00–16:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sahran Kahvila. Kaikki oikeudet pidätetään.</p>
+      
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger-valikko
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', function () {
+      const isOpen = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Sulje valikko linkkiä painettaessa
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html>
