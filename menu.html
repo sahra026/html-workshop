@@ -1,311 +1,120 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kahvila Kultapapusen menu – kahvit, teet, leivonnaiset ja lounasruuat.">
-  <title>Menu – Sahran Kahvila</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Menu - KallahtiCafe</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-  <a class="skip-link" href="#main-content">Siirry pääsisältöön</a>
+<header>
 
-  <!-- HEADER & NAV -->
-  <header class="site-header" role="banner">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo" aria-label="Sahran Kahvila – etusivu">
-        ☕ <span>Sahran Kahvila</span>
-      </a>
+<h1>KallahtiCafe</h1>
 
-      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Avaa valikko">
-        ☰
-      </button>
+<nav>
+<a href="index.html">Etusivu</a>
+<a href="menu.html">Menu</a>
+<a href="tietoja.html">Tietoa</a>
+<a href="yhteystiedot.html">Yhteystiedot</a>
+</nav>
 
-      <nav id="main-nav" aria-label="Päänavigaatio">
-        <ul class="nav-links" role="list">
-          <li><a href="index.html">Etusivu</a></li>
-          <li><a href="menu.html" class="active" aria-current="page">Menu</a></li>
-          <li><a href="tietoja.html">Tietoja</a></li>
-          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-          <li><a href="results.html">Results</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+</header>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero" style="background-color:#3b1f0a; background-image:linear-gradient(135deg,#3b1f0a 0%,#5a2d0c 100%); color:#f5ede0; text-align:center; padding:64px 24px 72px;" aria-labelledby="menu-hero-heading">
-    <div style="max-width:620px; margin:0 auto;">
-      <div class="hero-badge">Tuoretta joka päivä</div>
-      <h1 id="menu-hero-heading" style="margin:0 0 12px; font-size:clamp(28px,5vw,50px); color:#f5ede0; letter-spacing:-0.4px;">Meidän <em style="color:#c09a6b; font-style:normal;">Menu</em></h1>
-      <p style="margin:0; opacity:0.82; font-size:16px;">Kaikki valmistetaan rakkaudella tuoreista raaka-aineista. Allergeeneista kerromme mielellään – kysy henkilökunnalta!</p>
-    </div>
-  </section>
+<section class="content">
 
-  <!-- PÄÄSISÄLTÖ -->
-  <main id="main-content" class="main">
+<h2>Menu</h2>
 
-    <!-- KAHVIT & JUOMAT -->
-    <section class="menu-section" aria-labelledby="kahvit-otsikko">
-      <h2 class="menu-section-title" id="kahvit-otsikko">☕ Kahvit &amp; espressojuomat</h2>
+<h3>Kahvit ja juomat</h3>
 
-      <!-- Juomakuvat -->
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:18px 0 22px;">
-        <figure style="margin:0;">
-          <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=800&auto=format&fit=crop"
-               alt="Blueberry matcha latte – sininen ja vihreä erikoisjuoma lasissa"
-               style="width:100%; height:220px; object-fit:cover; border-radius:12px; display:block;"
-               onerror="this.outerHTML='<div style=\'height:220px;background:#f0e8dc;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#c09a6b;\'>☕ Matcha latte</div>'">
-          <figcaption style="margin-top:6px; font-size:12px; color:#7a5a40; font-style:italic;">Blueberry matcha latte – kausijuoma</figcaption>
-        </figure>
-        <figure style="margin:0;">
-          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&auto=format&fit=crop"
-               alt="Jääkahvi lasissa jäillä – raikas kesäjuoma"
-               style="width:100%; height:220px; object-fit:cover; border-radius:12px; display:block;"
-               onerror="this.outerHTML='<div style=\'height:220px;background:#f0e8dc;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#c09a6b;\'>🧊 Jääkahvi</div>'">
-          <figcaption style="margin-top:6px; font-size:12px; color:#7a5a40; font-style:italic;">Kylmähaudettu jääkahvi – suosittu kesällä</figcaption>
-        </figure>
-      </div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Espresso</span>
-            <span class="menu-item-desc">Vahva ja täyteläinen, 25 ml</span>
-          </div>
-          <span class="menu-price">2,80 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Cappuccino</span>
-            <span class="menu-item-desc">Espresso, höyrytetty maito, maitovaahto</span>
-          </div>
-          <span class="menu-price">4,20 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Latte <span class="menu-badge">Suosittu</span></span>
-            <span class="menu-item-desc">Pehmeä ja kermainen, valikoima mausteita</span>
-          </div>
-          <span class="menu-price">4,50 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Flat White</span>
-            <span class="menu-item-desc">Espresso + mikrovaahto, 180 ml</span>
-          </div>
-          <span class="menu-price">4,50 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Filter-kahvi</span>
-            <span class="menu-item-desc">Päivittäin vaihtuva single origin -papu</span>
-          </div>
-          <span class="menu-price">3,50 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Jääkahvi <span class="menu-badge">Kesä</span></span>
-            <span class="menu-item-desc">Kylmähaudettu, 300 ml, maidon kanssa tai ilman</span>
-          </div>
-          <span class="menu-price">5,20 €</span>
-        </div>
-      </div>
-    </section>
+<div class="menu-item">
 
-    <!-- TEET & MUUT -->
-    <section class="menu-section" aria-labelledby="teet-otsikko">
-      <h2 class="menu-section-title" id="teet-otsikko">🍵 Teet &amp; muut juomat</h2>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Laadukas lehtitee</span>
-            <span class="menu-item-desc">Valikoima: vihreä, musta, yrtti, rooibos</span>
-          </div>
-          <span class="menu-price">3,80 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Chai Latte</span>
-            <span class="menu-item-desc">Tuoreista mausteista keitetty, höyrytetyllä maidolla</span>
-          </div>
-          <span class="menu-price">4,80 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Kuuma kaakao</span>
-            <span class="menu-item-desc">Belgialainen suklaa, maitovaahto</span>
-          </div>
-          <span class="menu-price">4,50 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Tuoremehu</span>
-            <span class="menu-item-desc">Puristettuna päivittäin, appelsiini tai omena</span>
-          </div>
-          <span class="menu-price">4,20 €</span>
-        </div>
-      </div>
-    </section>
+<img src="img1.jpeg" alt="Jääkahvi">
 
-    <!-- LEIVONNAISET -->
-    <section class="menu-section" aria-labelledby="leivonnaiset-otsikko">
-      <h2 class="menu-section-title" id="leivonnaiset-otsikko">🥐 Leivonnaiset &amp; makeat</h2>
+<div>
+<p><strong>Jääkahvi</strong></p>
+<p>4,90€</p>
+</div>
 
-      <!-- Leivonnais-kuvat -->
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:18px 0 22px;">
-        <figure style="margin:0;">
-          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&auto=format&fit=crop"
-               alt="Voinen croissant sivukuvassa – rapea ja kultainen"
-               style="width:100%; height:200px; object-fit:cover; border-radius:12px; display:block;"
-               onerror="this.outerHTML='<div style=\'height:200px;background:#f0e8dc;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#c09a6b;\'>🥐 Croissant</div>'">
-          <figcaption style="margin-top:6px; font-size:12px; color:#7a5a40; font-style:italic;">Voinen croissant – paistetaan joka aamu</figcaption>
-        </figure>
-        <figure style="margin:0;">
-          <img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=800&auto=format&fit=crop"
-               alt="Pain au chocolat – suklaapiiras"
-               style="width:100%; height:200px; object-fit:cover; border-radius:12px; display:block;"
-               onerror="this.outerHTML='<div style=\'height:200px;background:#f0e8dc;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#c09a6b;\'>🍫 Pain au chocolat</div>'">
-          <figcaption style="margin-top:6px; font-size:12px; color:#7a5a40; font-style:italic;">Pain au chocolat – tumma suklaa taikinaan käärittynä</figcaption>
-        </figure>
-      </div>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Croissant <span class="menu-badge">Suosittu</span></span>
-            <span class="menu-item-desc">Voinen, paistettu aamulla, voi &amp; hillo</span>
-          </div>
-          <span class="menu-price">3,50 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Korvapuusti</span>
-            <span class="menu-item-desc">Perinteinen suomalainen, kaneli &amp; kardemumma</span>
-          </div>
-          <span class="menu-price">3,20 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Kakkupala</span>
-            <span class="menu-item-desc">Päivittäin vaihtuva – kysy tänään!</span>
-          </div>
-          <span class="menu-price">4,50 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Brownie</span>
-            <span class="menu-item-desc">Tumma suklaa, kosteaksi paistettu</span>
-          </div>
-          <span class="menu-price">3,80 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Kaurakeksi</span>
-            <span class="menu-item-desc">Vegaaninen, gluten-vapaa vaihtoehto</span>
-          </div>
-          <span class="menu-price">2,50 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Aamupala-setti <span class="menu-badge">Tarjous</span></span>
-            <span class="menu-item-desc">Kahvi + croissant, arkisin klo 8–10</span>
-          </div>
-          <span class="menu-price">6,50 €</span>
-        </div>
-      </div>
-    </section>
+</div>
 
-    <!-- LOUNAS -->
-    <section class="menu-section" aria-labelledby="lounas-otsikko">
-      <h2 class="menu-section-title" id="lounas-otsikko">🥗 Lounas (ma–pe klo 11–14)</h2>
-      <div class="menu-grid">
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Päivän keitto</span>
-            <span class="menu-item-desc">Leivän kanssa, vaihtuva valikoima päivittäin</span>
-          </div>
-          <span class="menu-price">9,50 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Salaattiannos</span>
-            <span class="menu-item-desc">Tuore lehti- tai pastasalaatti, proteiini valittavissa</span>
-          </div>
-          <span class="menu-price">11,50 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Lämpimät voileivät</span>
-            <span class="menu-item-desc">Paahdettu hapanjuurileipä, täytteet vaihtelevat</span>
-          </div>
-          <span class="menu-price">8,50 €</span>
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-info">
-            <span class="menu-item-name">Lounas-combo <span class="menu-badge">Säästä</span></span>
-            <span class="menu-item-desc">Keitto + kahvi tai tee + kakkupala</span>
-          </div>
-          <span class="menu-price">13,50 €</span>
-        </div>
-      </div>
-    </section>
+<div class="menu-item">
 
-    <!-- Allergeenihuomio -->
-    <section class="section" aria-labelledby="allergeeni-otsikko">
-      <div style="background:#fff8f2; border:1px solid rgba(107,63,30,0.15); border-radius:12px; padding:22px 26px; max-width:700px; margin:0 auto;">
-        <h2 id="allergeeni-otsikko" style="margin:0 0 8px; font-size:18px; color:#6b3f1e;">ℹ️ Allergeenit &amp; erityisruokavaliot</h2>
-        <p style="margin:0; font-size:14px; color:#7a5a40;">Huomioimme mielellään erityisruokavaliot. Kaikki leivonnaisemme valmistetaan tiloissa, joissa käsitellään gluteenia, maitoa, kananmunia ja pähkinöitä. Kysy henkilökunnalta tarkemmat tiedot tai allergeenilistamme.</p>
-      </div>
-    </section>
+<img src="img4.jpeg" alt="Blueberry Matcha Latte">
 
-  </main>
+<div>
+<p><strong>Blueberry Matcha Latte</strong></p>
+<p>5,90€</p>
+</div>
 
-  <!-- FOOTER -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <p class="footer-brand-name">☕ <span>Sahran Kahvila</span></p>
-        <p>Kotoisaa kahvilakulttuuria  .</p>
-      </div>
-      <div class="footer-col">
-        <h3>Sivut</h3>
-        <ul>
-          <li><a href="index.html">Etusivu</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="tietoja.html">Tietoja meistä</a></li>
-          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-          <li><a href="results.html">Results</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>Aukioloajat</h3>
-        <ul>
-          <li>Ma–Pe: 8:00–18:00</li>
-          <li>La: 9:00–17:00</li>
-          <li>Su: 10:00–16:00</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Sahran Kahvila. Kaikki oikeudet pidätetään.</p>
-      
-    </div>
-  </footer>
+</div>
 
-  <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    toggle.addEventListener('click', function () {
-      const isOpen = navLinks.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', isOpen);
-    });
-    navLinks.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        navLinks.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
-    });
-  </script>
+<h3>Leivonnaiset ja suolaiset</h3>
+
+<div class="menu-item">
+
+<img src="img3.jpeg" alt="Juusto salaatti croissant">
+
+<div>
+<p><strong>Juusto salaatti croissant</strong></p>
+<p>6,90€</p>
+</div>
+
+</div>
+
+<div class="menu-item">
+
+<img src="img2.jpeg" alt="Suklaacroissant">
+
+<div>
+<p><strong>Suklaacroissant</strong></p>
+<p>3,90€</p>
+</div>
+
+</div>
+
+<h3>Lisävalinnat</h3>
+
+<div class="menu-item">
+
+<div>
+
+<p><strong>Extra siirappi</strong> +1€</p>
+
+<p><strong>Extra kahvishotti</strong> +2€</p>
+
+<p><strong>Kasvimaito</strong> +0,80€</p>
+
+<p><strong>Kermavaahto</strong> +0,50€</p>
+
+<p><strong>Vaniljasiirappi</strong> +1€</p>
+
+<p><strong>Karamellisiirappi</strong> +1€</p>
+
+<p><strong>Hasselpähkinäsiirappi</strong> +1€</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>2026 KallahtiCafe</p>
+
+</footer>
 
 </body>
+
 </html>

@@ -1,231 +1,86 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kahvila Kultapapusen yhteystiedot, aukioloajat ja yhteydenottolomake.">
-  <title>Yhteystiedot – Sahran Kahvila</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yhteystiedot - KallahtiCafe</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-  <a class="skip-link" href="#main-content">Siirry pääsisältöön</a>
+<header>
 
-  <!-- HEADER & NAV -->
-  <header class="site-header" role="banner">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo" aria-label="Sahran Kahvila – etusivu">
-        ☕ <span>Sahran Kahvila</span>
-      </a>
+<h1>KallahtiCafe</h1>
 
-      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Avaa valikko">
-        ☰
-      </button>
+<nav>
+<a href="index.html">Etusivu</a>
+<a href="menu.html">Menu</a>
+<a href="tietoja.html">Tietoa</a>
+<a href="yhteystiedot.html">Yhteystiedot</a>
+</nav>
 
-      <nav id="main-nav" aria-label="Päänavigaatio">
-        <ul class="nav-links" role="list">
-          <li><a href="index.html">Etusivu</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="tietoja.html">Tietoja</a></li>
-          <li><a href="yhteystiedot.html" class="active" aria-current="page">Yhteystiedot</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+</header>
 
-  <!-- PAGE HERO -->
-  <section style="background-color:#3b1f0a; background-image:linear-gradient(135deg,#3b1f0a 0%,#5a2d0c 100%); color:#f5ede0; text-align:center; padding:64px 24px 72px;" aria-labelledby="yhteystiedot-hero-heading">
-    <div style="max-width:620px; margin:0 auto;">
-      <div class="hero-badge">Aina tavoitettavissa</div>
-      <h1 id="yhteystiedot-hero-heading" style="margin:0 0 12px; font-size:clamp(28px,5vw,50px); color:#f5ede0; letter-spacing:-0.4px;">Ota <em style="color:#c09a6b; font-style:normal;">Yhteyttä</em></h1>
-      <p style="margin:0; opacity:0.82; font-size:16px;">Löydät meidät Käpylästä. Voit myös lähettää viestin – vastaamme arkipäivisin.</p>
-    </div>
-  </section>
+<section class="content">
 
-  <!-- PÄÄSISÄLTÖ -->
-  <main id="main-content" class="main">
+<h2>Yhteystiedot</h2>
 
-    <!-- Yhteystiedot + lomake -->
-    <section class="section" aria-labelledby="yhteystiedot-otsikko">
-      <h2 id="yhteystiedot-otsikko" class="sr-only">Yhteystiedot ja yhteydenottolomake</h2>
-      <div class="contact-grid">
+<p><strong>Osoite:</strong><br>
+Kallahdenranta 12<br>
+00980 Helsinki</p>
 
-        <!-- Vasemmalla: tiedot -->
-        <div>
-          <div class="contact-info-box" style="margin-bottom:20px;">
-            <h2>📍 Osoite &amp; sijainti</h2>
-            <div class="contact-row">
-              <span class="contact-icon">📌</span>
-              <p><strong>Osoite lisätään myöhemmin</strong></p>
-            </div>
-            <div class="contact-row">
-              <span class="contact-icon">📞</span>
-              <p><strong>Puhelin</strong><a href="tel:+358401234567">+358 40 123 4567</a></p>
-            </div>
-            <div class="contact-row">
-              <span class="contact-icon">📧</span>
-              <p><strong>Sähköposti</strong><a href="mailto:hei@kultapapunen.fi">hei@kultapapunen.fi</a></p>
-            </div>
-            <div class="contact-row">
-              <span class="contact-icon">📱</span>
-              <p><strong>Instagram</strong><a href="#" aria-label="Instagram – avautuu uuteen ikkunaan">@kultapapunen</a></p>
-            </div>
-          </div>
+<p><strong>Puhelin:</strong><br>
+040 123 4567</p>
 
-          <!-- Aukioloajat -->
-          <div class="contact-info-box">
-            <h2>🕐 Aukioloajat</h2>
-            <table class="hours-table" aria-label="Aukioloajat viikonpäivittäin">
-              <tbody>
-                <tr>
-                  <td>Maanantai</td>
-                  <td>8:00–18:00</td>
-                </tr>
-                <tr>
-                  <td>Tiistai</td>
-                  <td>8:00–18:00</td>
-                </tr>
-                <tr>
-                  <td>Keskiviikko</td>
-                  <td>8:00–18:00</td>
-                </tr>
-                <tr>
-                  <td>Torstai</td>
-                  <td>8:00–18:00</td>
-                </tr>
-                <tr>
-                  <td>Perjantai</td>
-                  <td>8:00–18:00</td>
-                </tr>
-                <tr>
-                  <td>Lauantai</td>
-                  <td>9:00–17:00</td>
-                </tr>
-                <tr>
-                  <td>Sunnuntai</td>
-                  <td>10:00–16:00</td>
-                </tr>
-              </tbody>
-            </table>
-            <p style="margin:14px 0 0; font-size:13px; color:#7a5a40;">⚠️ Juhlapyhien aukioloajat voivat poiketa – tarkista sometileiltämme.</p>
-          </div>
-        </div>
+<p><strong>Sähköposti:</strong><br>
+info@kallahticafe.fi</p>
 
-        <!-- Oikealla: lomake -->
-        <div>
-          <div class="contact-form" role="region" aria-labelledby="lomake-otsikko">
-            <h2 id="lomake-otsikko">✉️ Lähetä viesti</h2>
-            <p style="margin:0 0 20px; font-size:14px; color:#7a5a40;">Varaukset, palaute tai yleinen kysymys – kirjoita meille!</p>
+<p><strong>Aukioloajat:</strong></p>
 
-            <div class="form-group">
-              <label for="nimi">Nimi *</label>
-              <input type="text" id="nimi" name="nimi" autocomplete="name" required placeholder="Etunimi Sukunimi">
-            </div>
+<ul>
+<li>Maanantai–Perjantai: 08:00–18:00</li>
+<li>Lauantai: 09:00–18:00</li>
+<li>Sunnuntai: 10:00–16:00</li>
+</ul>
 
-            <div class="form-group">
-              <label for="sahkoposti">Sähköposti *</label>
-              <input type="email" id="sahkoposti" name="sahkoposti" autocomplete="email" required placeholder="sinä@esimerkki.fi">
-            </div>
+<h3>Lähetä viesti</h3>
 
-            <div class="form-group">
-              <label for="aihe">Aihe</label>
-              <select id="aihe" name="aihe">
-                <option value="">Valitse aihe...</option>
-                <option value="varaus">Yksityistilaisuuden varaus</option>
-                <option value="palaute">Palaute</option>
-                <option value="yhteistyö">Yhteistyö</option>
-                <option value="muu">Muu</option>
-              </select>
-            </div>
+<form>
 
-            <div class="form-group">
-              <label for="viesti">Viesti *</label>
-              <textarea id="viesti" name="viesti" required placeholder="Kirjoita viestisi tähän..."></textarea>
-            </div>
+<label>Nimi</label>
+<input type="text">
 
-            <button type="button" class="btn btn-primary" style="width:100%;" onclick="laheta()">
-              Lähetä viesti →
-            </button>
+<br><br>
 
-            <div id="vahvistus" role="alert" aria-live="polite" style="display:none; margin-top:16px; background:#e8f5e9; border:1px solid #a5d6a7; border-radius:8px; padding:14px 16px; font-size:14px; color:#2e7d32;">
-              ✅ Kiitos viestistäsi! Otamme yhteyttä pian.
-            </div>
-          </div>
-        </div>
+<label>Sähköposti</label>
+<input type="email">
 
-      </div>
-    </section>
+<br><br>
 
-    <!-- Kartta-placeholder -->
-    <section class="section" aria-labelledby="kartta-otsikko">
-      <div class="section-header">
-        <h2 id="kartta-otsikko">Löydä perille</h2>
-        <p>Osoite lisätään myöhemmin.</p>
-      </div>
-      <div class="map-placeholder" role="img" aria-label="Kartta">
-        Kartta tulossa
-      </div>
-    </section>
+<label>Viesti</label><br>
+<textarea rows="5"></textarea>
 
-  </main>
+<br><br>
 
-  <!-- FOOTER -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <p class="footer-brand-name">☕ <span>Sahran Kahvila</span></p>
-        <p>Kotoisaa kahvilakulttuuria  .</p>
-      </div>
-      <div class="footer-col">
-        <h3>Sivut</h3>
-        <ul>
-          <li><a href="index.html">Etusivu</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="tietoja.html">Tietoja meistä</a></li>
-          <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
-          <li><a href="results.html">Results</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>Aukioloajat</h3>
-        <ul>
-          <li>Ma–Pe: 8:00–18:00</li>
-          <li>La: 9:00–17:00</li>
-          <li>Su: 10:00–16:00</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Sahran Kahvila. Kaikki oikeudet pidätetään.</p>
-      
-    </div>
-  </footer>
+<button type="submit">Lähetä</button>
 
-  <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    toggle.addEventListener('click', function () {
-      const isOpen = navLinks.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', isOpen);
-    });
-    navLinks.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        navLinks.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
-    });
+</form>
 
-    function laheta() {
-      const nimi = document.getElementById('nimi').value.trim();
-      const sposti = document.getElementById('sahkoposti').value.trim();
-      const viesti = document.getElementById('viesti').value.trim();
-      if (!nimi || !sposti || !viesti) {
-        alert('Täytä pakolliset kentät (nimi, sähköposti, viesti).');
-        return;
-      }
-      document.getElementById('vahvistus').style.display = 'block';
-    }
-  </script>
+</section>
+
+<footer>
+<p>2026 KallahtiCafe</p>
+</footer>
 
 </body>
+
 </html>
